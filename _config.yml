@@ -1,0 +1,13 @@
+title: "Jugaad Labs"
+email: "mail@jugaadlabs.in"
+description: "Practical engineering for desktop apps, Linux systems, embedded systems, and robotics."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jugaadlabs.in"
+markdown: kramdown
+theme: null
+exclude: ["node_modules"]
+
+# Author info
+author:
+  name: "Jugaad Labs"
+  email: "mail@jugaadlabs.in"

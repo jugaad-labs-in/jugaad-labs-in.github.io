@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jugaad Labs</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">
+      <img src="/assets/img/logo.svg" alt="Jugaad Labs logo" class="logo">
+      <span class="brand-text">Jugaad Labs</span>
+    </a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/services.html">Services</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <a class="cta" href="mailto:mail@jugaadlabs.in">mail@jugaadlabs.in</a>
+  </div>
+</header>
+
+<main id="content" class="site-main container"><h1>Jugaad Labs — Website (Jekyll)</h1>
+<p>This repository contains the source for the Jugaad Labs website served from <code>jugaadlabs.in</code>.</p>
+<p>Key points:</p>
+<ul>
+<li>Jekyll-based scaffold suitable for GitHub Pages (<code>owner.github.io</code> repository).</li>
+<li>Dark, minimal tech-focused theme with an easily changeable accent color via <code>--accent</code> in <code>assets/css/styles.css</code>.</li>
+<li>Contact uses <code>mailto:mail@jugaadlabs.in</code>.</li>
+<li><code>CNAME</code> included for <code>jugaadlabs.in</code>.</li>
+</ul>
+<p>Local preview (requires Ruby and Jekyll):</p>
+<pre class="codehilite"><code class="language-bash"># Install bundler + jekyll if needed
+gem install bundler jekyll
+
+# Serve locally
+bundle exec jekyll serve --livereload
+</code></pre>
+
+<p>If you don't want to run Jekyll locally, push to <code>main</code> — GitHub Pages will build the site automatically for <code>owner.github.io</code> repos.</p>
+<p>Files of note:</p>
+<ul>
+<li><code>_config.yml</code> — site metadata</li>
+<li><code>CNAME</code> — custom domain <code>jugaadlabs.in</code></li>
+<li><code>_layouts/</code> &amp; <code>_includes/</code> — template files</li>
+<li><code>assets/css/styles.css</code> — single place to change <code>--accent</code></li>
+</ul>
+<p>To change the accent color, edit <code>assets/css/styles.css</code> and modify the <code>--accent</code> value near the top.</p></main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Jugaad Labs — Practical engineering for desktop, embedded, and robotics.</p>
+    <p class="social">GitHub: <a href="https://github.com/jugaad-labs">jugaad-labs</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
