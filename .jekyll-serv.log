@@ -267,3 +267,85 @@ LiveReload address: http://127.0.0.1:35729
                     assets/css/styles.css
                     ...done in 0.009834 seconds.
                     
+[2025-12-10 19:14:00] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:15:22
+                    assets/css/styles.css
+                    ...done in 0.013927 seconds.
+                    
+[2025-12-10 19:15:23] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:15:28
+                    assets/css/styles.css
+                    ...done in 0.010654 seconds.
+                    
+[2025-12-10 19:15:28] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:15:30
+                    assets/css/styles.css
+                    ...done in 0.008181 seconds.
+                    
+[2025-12-10 19:15:30] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:15:34
+                    assets/css/styles.css
+                    ...done in 0.006394 seconds.
+                    
+[2025-12-10 19:15:35] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:15:48
+                    assets/css/styles.css
+                    ...done in 0.01292 seconds.
+                    
+[2025-12-10 19:15:48] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:15:58
+                    assets/css/styles.css
+                    ...done in 0.009898 seconds.
+                    
+[2025-12-10 19:15:58] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:16:02
+                    assets/css/styles.css
+                    ...done in 0.005352 seconds.
+                    
+[2025-12-10 19:16:02] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:16:04
+                    assets/css/styles.css
+                    ...done in 0.013196 seconds.
+                    
+[2025-12-10 19:16:04] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+[2025-12-10 19:16:04] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:16:14
+                    assets/css/styles.css
+                    ...done in 0.011704 seconds.
+                    
+[2025-12-10 19:16:14] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+[2025-12-10 19:16:48] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:17:04
+                    assets/css/styles.css
+                    ...done in 0.01298 seconds.
+                    
+[2025-12-10 19:17:04] ERROR Errno::ECONNRESET: Connection reset by peer @ io_fillbuf - fd:16 
+	/Users/tm9k1/dev/projects/jugaad-labs-in.github.io/vendor/bundle/ruby/3.2.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	/Users/tm9k1/dev/projects/jugaad-labs-in.github.io/vendor/bundle/ruby/3.2.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	/Users/tm9k1/dev/projects/jugaad-labs-in.github.io/vendor/bundle/ruby/3.2.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+[2025-12-10 19:17:04] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:17:07
+                    assets/css/styles.css
+                    ...done in 0.007157 seconds.
+                    
+[2025-12-10 19:17:08] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:17:13
+                    assets/css/styles.css
+                    ...done in 0.008289 seconds.
+                    
+[2025-12-10 19:17:13] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:17:14
+                    assets/css/styles.css
+                    ...done in 0.004617 seconds.
+                    
+[2025-12-10 19:17:14] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:17:16
+                    assets/css/styles.css
+                    ...done in 0.004685 seconds.
+                    
+[2025-12-10 19:17:16] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.
+      Regenerating: 1 file(s) changed at 2025-12-10 19:17:28
+                    assets/css/styles.css
+                    ...done in 0.004236 seconds.
+                    
+[2025-12-10 19:17:28] ERROR '/.well-known/appspecific/com.chrome.devtools.json' not found.

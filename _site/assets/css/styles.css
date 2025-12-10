@@ -53,7 +53,7 @@ body {
 .brand { display:flex; align-items:center; gap:.75rem; text-decoration:none; color:var(--text); }
 .logo { width:40px; height:40px; display:block; }
 .brand-text { font-weight:600; letter-spacing:.2px; }
-.site-nav a { color:var(--muted); text-decoration:none; margin:0 .6rem; padding: .35rem .5rem; border-radius:8px; transition: background 160ms ease, color 160ms ease; position: relative; z-index: 2; }
+.site-nav a { color:var(--muted); text-decoration:none; margin:0rem; padding: .5rem .5rem; border-radius:8px; transition: background 160ms ease, color 160ms ease; position: relative; z-index: 2; }
 .site-nav a:focus{ outline: none; }
 .site-nav a:hover { color:var(--text); background: rgba(255,255,255,0.03); }
 .site-nav a.active { color: var(--text); background: rgba(255,255,255,0.04); }
@@ -78,6 +78,9 @@ body {
   .brand { order: 1; }
   .cta { order: 2; margin-left: 0; position: static; transform: none; display: inline-flex; align-items: center; padding: .32rem .6rem; height: auto; }
   .site-nav { order: 3; flex-basis: 100%; width: 100%; margin-top: 0.6rem; }
+  /* Make nav a single non-wrapping horizontal row on small screens */
+  .site-nav { display: flex; gap: .45rem; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 4px; }
+  .site-nav a { white-space: nowrap; }
 }
 
 @media (prefers-reduced-motion: reduce) {
