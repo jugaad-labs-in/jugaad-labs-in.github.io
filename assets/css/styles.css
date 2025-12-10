@@ -22,7 +22,7 @@ body {
   line-height:1.5;
 }
 
-.container { max-width: var(--container); margin: 0 auto; padding: 1.5rem; margin-left: 4%; margin-right: 4%;}
+.container { max-width: var(--container); margin: 0 auto; padding: 1.5rem; }
 
 .site-header {
   /* Frosted / Liquid glass (iOS-like) */
