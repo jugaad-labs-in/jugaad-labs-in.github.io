@@ -8,8 +8,6 @@ description: "Practical engineering for desktop apps, Linux systems administrati
 
 > Practical engineering for desktop applications, Linux systems administration, embedded systems, and robotics.
 
-[Contact — mail@jugaadlabs.in](mailto:mail@jugaadlabs.in)
-
 ## Services
 
 - Desktop application design & implementation (Qt, GTK, Electron, native)
@@ -20,4 +18,3 @@ description: "Practical engineering for desktop apps, Linux systems administrati
 ## Expertise
 
 C, C++, Rust, Python, Golang, JavaScript/TypeScript; Yocto, Buildroot, systemd, Ansible, ROS2.
-

@@ -1,14 +1,24 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Jugaad Labs</title>
+  <meta name="description" content="Practical engineering for desktop apps, Linux systems administration, embedded systems, and robotics.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jugaad Labs">
+  <meta property="og:description" content="Practical engineering for desktop apps, Linux systems administration, embedded systems, and robotics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/">
+
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
-<body>
-<header class="site-header">
+
+  <body>
+    <canvas id="kaleidoscope" class="kaleidoscope-canvas" data-turbo-permanent></canvas>
+    <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/">
       <img src="/assets/img/logo.svg" alt="Jugaad Labs logo" class="logo">
@@ -25,26 +35,37 @@
   </div>
 </header>
 
-<main id="content" class="site-main container"><h1>Jugaad Labs</h1>
+
+    <main id="content" class="site-main container">
+      <h1 id="jugaad-labs">Jugaad Labs</h1>
+
 <blockquote>
-<p>Practical engineering for desktop applications, Linux systems administration, embedded systems, and robotics.</p>
+  <p>Practical engineering for desktop applications, Linux systems administration, embedded systems, and robotics.</p>
 </blockquote>
-<p><a href="mailto:mail@jugaadlabs.in">Contact — mail@jugaadlabs.in</a></p>
-<h2>Services</h2>
+
+<h2 id="services">Services</h2>
+
 <ul>
-<li>Desktop application design &amp; implementation (Qt, GTK, Electron, native)</li>
-<li>Linux systems architecture, automation, hardening, monitoring</li>
-<li>Embedded software: firmware, boot systems (Yocto/Buildroot), board bring‑up</li>
-<li>Robotics software: perception, control, ROS2, real‑time components</li>
+  <li>Desktop application design &amp; implementation (Qt, GTK, Electron, native)</li>
+  <li>Linux systems architecture, automation, hardening, monitoring</li>
+  <li>Embedded software: firmware, boot systems (Yocto/Buildroot), board bring‑up</li>
+  <li>Robotics software: perception, control, ROS2, real‑time components</li>
 </ul>
-<h2>Expertise</h2>
-<p>C, C++, Rust, Python, Golang, JavaScript/TypeScript; Yocto, Buildroot, systemd, Ansible, ROS2.</p></main>
-<footer class="site-footer">
+
+<h2 id="expertise">Expertise</h2>
+
+<p>C, C++, Rust, Python, Golang, JavaScript/TypeScript; Yocto, Buildroot, systemd, Ansible, ROS2.</p>
+
+    </main>
+
+    <footer class="site-footer">
   <div class="container">
-    <p>© 2026 Jugaad Labs — Practical engineering for desktop, embedded, and robotics.</p>
-    <p class="social">GitHub: <a href="https://github.com/jugaad-labs">jugaad-labs</a></p>
+    <p>© 2025- Jugaad Labs — Practical engineering for desktop, embedded, and robotics.</p>
+    <p class="social">Linkedin: <a href="https://linkedin.com/in/tm9k1">Piyush Aggarwal</a></p>
   </div>
 </footer>
 
-</body>
+    <script src="/assets/js/kaleidoscope.js" defer></script>
+    <script src="/assets/js/spa-nav.js" defer></script>
+  </body>
 </html>

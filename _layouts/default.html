@@ -2,6 +2,7 @@
 <html lang="en">
   {% include head.html %}
   <body>
+    <canvas id="kaleidoscope" class="kaleidoscope-canvas" data-turbo-permanent></canvas>
     {% include header.html %}
 
     <main id="content" class="site-main container">
@@ -9,5 +10,7 @@
     </main>
 
     {% include footer.html %}
+    <script src="/assets/js/kaleidoscope.js" defer></script>
+    <script src="/assets/js/spa-nav.js" defer></script>
   </body>
 </html>
