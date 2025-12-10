@@ -22,7 +22,7 @@ body {
   line-height:1.5;
 }
 
-.container { max-width: var(--container); margin: 0 auto; padding: 1.5rem; }
+.container { max-width: var(--container); margin: 0 auto; padding: 1.5rem; margin-left: 4%; margin-right: 4%;}
 
 .site-header {
   /* Frosted / Liquid glass (iOS-like) */
@@ -72,8 +72,12 @@ body {
 .site-footer { border-top:1px solid rgba(255,255,255,0.02); padding:1.25rem 0; color:var(--muted); }
 
 @media (max-width:700px){
-  .header-inner { flex-direction:column; align-items:flex-start; }
-  .site-nav { order:3; }
+  .site-header { position: relative; }
+  /* Keep brand and CTA in one row; nav flows below */
+  .header-inner { flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-left: 4%; margin-right: 4%; }
+  .brand { order: 1; }
+  .cta { order: 2; margin-left: 0; position: static; transform: none; display: inline-flex; align-items: center; padding: .32rem .6rem; height: auto; }
+  .site-nav { order: 3; flex-basis: 100%; width: 100%; margin-top: 0.6rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
