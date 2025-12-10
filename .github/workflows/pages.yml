@@ -22,14 +22,15 @@ jobs:
         with:
           ruby-version: '3.2'
 
-      - name: Install dependencies
+      - name: Install dependencies (use Bundler 2)
         run: |
-          gem install bundler
-          bundle config set path vendor/bundle
-          bundle install --jobs 4 --retry 3
+          # Install a Bundler 2.x release compatible with Ruby 3.2
+          gem install bundler -v '2.4.13'
+          bundle _2.4.13_ config set path vendor/bundle
+          bundle _2.4.13_ install --jobs 4 --retry 3
 
       - name: Build site with Jekyll
-        run: bundle exec jekyll build --trace
+        run: bundle _2.4.13_ exec jekyll build --trace
 
       - name: Cache Ruby gems
         uses: actions/cache@v4
