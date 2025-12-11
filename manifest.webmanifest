@@ -1,10 +1,10 @@
 {
   "name": "Jugaad Labs",
-  "short_name": "Jugaad",
-  "start_url": "/",
+  "short-name": "Jugaad Labs",
+  "start-url": "/",
   "display": "standalone",
-  "background_color": "#020510",
-  "theme_color": "#041228",
+  "background-color": "#020510",
+  "theme-color": "#041228",
   "icons": [
     {
       "src": "/assets/img/icon-192.png",
