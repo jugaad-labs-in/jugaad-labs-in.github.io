@@ -1,0 +1,38 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.jekyll-serv.log
++.jekyll
+
+nohup.out
+
+# Bundler / Ruby
+.bundle/
+vendor/bundle/
+vendor/cache/
+*.gem
+
+# macOS
+.DS_Store
+
+# Logs and temp files
+*.log
+.jekyll-serv.log
+*.swp
+*.swo
+
+# Node
+node_modules/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.iml
+
+# Misc
+.env
+coverage/
+
+# Keep manifest and icons tracked by default; add exceptions if needed
