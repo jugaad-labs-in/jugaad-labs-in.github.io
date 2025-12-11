@@ -6,7 +6,7 @@ description: "Practical engineering for desktop apps, Linux systems administrati
 
 # Jugaad Labs
 
-> Practical engineering for desktop applications, Linux systems administration, embedded systems, and robotics.
+Practical engineering for desktop applications, Linux systems administration, embedded systems, and robotics.
 
 ## Services
 
