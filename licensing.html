@@ -15,7 +15,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <!-- PWA / Mobile theme color to match site night-sky -->
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#111111">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="manifest" href="/manifest.webmanifest">
@@ -34,7 +34,7 @@
       <a href="/about.html">About</a>
       <a href="/services.html">Services</a>
       <a href="/projects.html">Projects</a>
-      <a href="/contact.html">Contact</a>
+      <a href="/contact-us.html">Contact Us</a>
     </nav>
     <a class="cta" href="mailto:mail@jugaadlabs.in">mail@jugaadlabs.in</a>
   </div>
@@ -50,8 +50,17 @@
 
     <footer class="site-footer">
   <div class="container">
-    <p>© 2025- Jugaad Labs — Practical engineering for desktop, embedded, and robotics.</p>
+    <p>&copy <span id="current-year"></span> Jugaad Labs | Practical engineering for desktop, embedded, and robotics.</p>
+    <script>
+      // Set current year in footer
+      const currentYear = new Date().getFullYear();
+      const yearElement = document.getElementById('current-year');
+      yearElement.textContent = currentYear;
+    </script>
     <p class="social">Linkedin: <a href="https://linkedin.com/company/jugaad-labs-in">Jugaad Labs</a></p>
+  </div>
+  <div class="container">
+    <p>Built using <a href="https://jekyllrb.com">Jekyll</a></p>
   </div>
 </footer>
 

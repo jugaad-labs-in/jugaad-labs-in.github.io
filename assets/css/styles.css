@@ -1,11 +1,11 @@
 :root {
   /* Monochrome classy palette */
-  --bg: #041228;           /* night-blue background */
+  --bg: #000000;           /* night-blue background */
   --surface: #07182b;      /* slightly lighter surface */
   --muted: #9a9a9a;        /* muted gray for secondary text */
   --text: #f5f5f5;         /* primary text */
-  --accent: #bdbdbd;       /* light gray accent */
-  --accent-foreground: #0b0b0b; /* text color on accent */
+  --accent: #0b0b0b;       /* light gray accent */
+  --accent-foreground: #bdbdbd; /* text color on accent */
   --radius: 10px;
   --container: 1000px;
 }
@@ -19,7 +19,7 @@ body {
   color: var(--text);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  line-height:1.5;
+  line-height:2.0;
 }
 
 .container { max-width: var(--container); margin: 0 auto; padding: 1.5rem; }
@@ -49,7 +49,7 @@ body {
   background-image: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.00) 2px), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.00) 3px);
   opacity: 0.35;
 }
-.header-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding: 0.8rem 0; position: relative; z-index: 1; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding: 0.8rem 0.8rem; position: relative; z-index: 1; }
 .brand { display:flex; align-items:center; gap:.75rem; text-decoration:none; color:var(--text); }
 .logo { width:40px; height:40px; display:block; }
 .brand-text { font-weight:600; letter-spacing:.2px; }
@@ -71,10 +71,19 @@ body {
 .site-main { padding: 2rem 0; }
 .site-footer { border-top:1px solid rgba(255,255,255,0.02); padding:1.25rem 0; color:var(--muted); }
 
+.site-main h1, .site-main h2, .site-main h3, .site-main h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+.site-main p { margin-left: 0.9rem; margin-right: 0.9rem; }
+.site-title { margin-top: 0.4rem; margin-bottom: 0.6rem; }
+
 @media (max-width:700px){
   .site-header { position: relative; }
   /* Keep brand and CTA in one row; nav flows below */
-  .header-inner { flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-left: 4%; margin-right: 4%; }
+  .header-inner { flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap;}
   .brand { order: 1; }
   .cta { order: 2; margin-left: 0; position: static; transform: none; display: inline-flex; align-items: center; padding: .32rem .6rem; height: auto; }
   .site-nav { order: 3; flex-basis: 100%; width: 100%; margin-top: 0.6rem; }
@@ -88,7 +97,7 @@ body {
 }
 
 /* Small utility */
-a { color: var(--accent); }
+a { color: var(--accent-foreground); }
 
 /* Kaleidoscope background canvas */
 .kaleidoscope-canvas {
