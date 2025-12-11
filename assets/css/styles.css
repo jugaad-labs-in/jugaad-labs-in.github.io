@@ -1,6 +1,6 @@
 :root {
   /* Monochrome classy palette */
-  --bg: #041228;           /* night-blue background */
+  --bg: #000000;           /* night-blue background */
   --surface: #07182b;      /* slightly lighter surface */
   --muted: #9a9a9a;        /* muted gray for secondary text */
   --text: #f5f5f5;         /* primary text */
@@ -19,7 +19,7 @@ body {
   color: var(--text);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  line-height:1.5;
+  line-height:2.0;
 }
 
 .container { max-width: var(--container); margin: 0 auto; padding: 1.5rem; }
