@@ -3,8 +3,8 @@
   "short-name": "Jugaad Labs",
   "start-url": "/",
   "display": "standalone",
-  "background-color": "#020510",
-  "theme-color": "#041228",
+  "background-color": "#000000",
+  "theme-color": "#000000",
   "icons": [
     {
       "src": "/assets/img/icon-192.png",
