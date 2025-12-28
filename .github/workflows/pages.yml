@@ -40,10 +40,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      # - name: Ensure CNAME in published site
-      #   run: |
-      #     # Ensure the built site contains a CNAME for the custom domain
-      #     echo 'jugaadlabs.in' > _site/CNAME
+      - name: Ensure CNAME in published site
+        run: |
+          # Ensure the built site contains a CNAME for the custom domain
+          echo 'jugaadlabs.in' > _site/CNAME
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
