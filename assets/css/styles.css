@@ -5,7 +5,7 @@
   --muted: #9a9a9a;        /* muted gray for secondary text */
   --text: #f5f5f5;         /* primary text */
   --accent: #0b0b0b;       /* light gray accent */
-  --accent-foreground: #bdbdbd; /* text color on accent */
+  --accent-foreground: #cccccc; /* text color on accent */
   --radius: 10px;
   --container: 1000px;
 }
@@ -107,7 +107,7 @@ a { color: var(--accent-foreground); }
   height: 100%;
   z-index: -1;
   pointer-events: none;
-  opacity: 0.85;
+  opacity: 0.75;
   transform: translateZ(0);
   will-change: transform, opacity;
   background: var(--bg);

@@ -17,4 +17,4 @@ Practical engineering for desktop applications, Linux systems administration, em
 
 ## Expertise
 
-C, C++, Rust, Python, Golang, JavaScript/TypeScript; Yocto, Buildroot, systemd, Ansible, ROS2.
+C, C++, Rust, Python, Golang, GNU/Linux, Yocto, Buildroot, systemd, Ansible, ROS2.
