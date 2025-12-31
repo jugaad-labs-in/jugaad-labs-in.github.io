@@ -46,7 +46,33 @@
   const vsSource = 'attribute vec2 position; varying vec2 vUv; void main(){ vUv = (position+1.0)*0.5; gl_Position = vec4(position,0.0,1.0); }';
 
   // Fragment shader: procedural "Siri-orb" style metaballs + glow
-    const fsSource = `precision mediump float;
+  const fsSourceHeader = `
+    precision mediump float;
+    `;
+
+  const fsSourceColorPalletteNight = `
+    // color palette tuned to night-sky clouds (deep navy -> slate blue -> pale cloud)
+    vec3 palette(float t){
+      vec3 c1 = vec3(0.02, 0.06, 0.18); // deep navy (near-black)
+      vec3 c2 = vec3(0.14, 0.28, 0.45); // slate/indigo midtones
+      vec3 c3 = vec3(0.78, 0.84, 0.9);  // pale cloud (soft desaturated white-blue)
+      float m = smoothstep(0.15, 0.85, t);
+      return mix(mix(c1, c2, t), c3, m);
+    }
+    `;
+
+  const fsSourceColorPalletteDay = `
+    // color palette tuned to night-sky clouds (deep navy -> slate blue -> pale cloud)
+    vec3 palette(float t){
+      vec3 c1 = vec3(0.02, 0.06, 0.18); // deep navy (near-black)
+      vec3 c2 = vec3(0.14, 0.28, 0.45); // slate/indigo midtones
+      vec3 c3 = vec3(0.78, 0.84, 0.9);  // pale cloud (soft desaturated white-blue)
+      float m = smoothstep(0.15, 0.85, t);
+      return mix(mix(c1, c2, t), c3, m);
+    }
+    `;
+
+  const fsSourceBase = `
     uniform vec2 resolution;
     uniform float time;
     varying vec2 vUv;
@@ -64,15 +90,6 @@
       return mix(a,b,u.x) + (c-a)*u.y*(1.0-u.x) + (d-b)*u.x*u.y;
     }
     float fbm(vec2 p){ float v=0.0; float a=0.5; for(int i=0;i<5;i++){ v+=a*noise(p); p*=2.0; a*=0.5; } return v; }
-
-    // color palette tuned to night-sky clouds (deep navy -> slate blue -> pale cloud)
-    vec3 palette(float t){
-      vec3 c1 = vec3(0.02, 0.06, 0.18); // deep navy (near-black)
-      vec3 c2 = vec3(0.14, 0.28, 0.45); // slate/indigo midtones
-      vec3 c3 = vec3(0.78, 0.84, 0.9);  // pale cloud (soft desaturated white-blue)
-      float m = smoothstep(0.15, 0.85, t);
-      return mix(mix(c1, c2, t), c3, m);
-    }
 
     // rotate a vec2 by angle
     mat2 rot(float a){ float s=sin(a), c=cos(a); return mat2(c,-s,s,c); }
@@ -169,7 +186,17 @@
   }
 
   const vs = createShader(gl.VERTEX_SHADER, vsSource);
-  const fs = createShader(gl.FRAGMENT_SHADER, fsSource);
+
+  // get current time and use different fsSource if time of day is day or night
+  const now = new Date();
+  var fsSource = null;
+  if (now.getHours() >= 6 && now.getHours() < 18) {
+    fsSource = fsSourceHeader + fsSourceColorPalletteDay + fsSourceBase;
+  } else {
+    fsSource = fsSourceHeader + fsSourceColorPalletteNight + fsSourceBase;
+  }
+
+  var fs = createShader(gl.FRAGMENT_SHADER, fsSource);
   const program = createProgram(vs, fs);
   if (!program) return;
   gl.useProgram(program);
